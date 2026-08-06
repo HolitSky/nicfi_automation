@@ -22,7 +22,7 @@ from urllib3.util.retry import Retry
 
 
 API_ROOT = "https://api.planet.com/basemaps/v1"
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 QUAD_ID_PATTERN = re.compile(r"^(?P<x>\d+)-(?P<y>\d+)$")
 TIFF_NAME_PATTERN = re.compile(

@@ -1,7 +1,7 @@
 from pathlib import Path
 import shutil
 
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 runtime_files = [
     BASE_DIR / "config" / "selected_quads.json",

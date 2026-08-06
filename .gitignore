@@ -123,3 +123,6 @@ ehthumbs.db
 # =============================================================================
 # Prompt lanjutan — hanya untuk keperluan lokal, jangan masuk Git
 PROMPT_LANJUT_NEW_CHAT.md
+
+# Cache prompt AI untuk konteks antar-sesi
+.prompt_cache/

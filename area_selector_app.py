@@ -20,7 +20,7 @@ import streamlit as st
 from dotenv import dotenv_values, set_key
 from folium.plugins import Draw, Fullscreen, MousePosition
 from streamlit_folium import st_folium
-from run_identity import (
+from core.run_identity import (
     build_selection_signature,
     create_run_id,
     ensure_run_id,

@@ -144,22 +144,33 @@ data/
 
 ```
 nicfi_automation/
-├── 📄 area_selector_app.py        ← UI utama Streamlit
-├── 📄 download_quads.py           ← Engine download (batch, worker, retry)
-├── 📄 download_state.py           ← SQLite checkpoint per Quad
-├── 📄 run_identity.py             ← Manajemen run ID & state
-├── 📄 planet_report.py            ← Generator workbook Excel
+├── 📄 area_selector_app.py        ← Entry point Streamlit (UI utama)
+├── 📄 download_quads.py           ← Entry point subprocess (downloader)
 ├── 📄 requirements.txt
 ├── 📄 .env / .env.example
 ├── 📄 README.md / CHANGELOG.md
-├── 📄 setup_area_selector.bat
-├── 📄 launch_area_selector.bat
+│
+├── 📂 core/                       ← Modul library Python
+│   ├── __init__.py                ← PROJECT_ROOT definition
+│   ├── download_state.py          ← SQLite checkpoint per Quad
+│   ├── run_identity.py            ← Manajemen run ID & signature
+│   └── planet_report.py           ← Generator workbook Excel
+│
+├── 📂 bat/                        ← Script BAT (Windows)
+│   ├── setup_area_selector.bat    ← Setup venv & dependency
+│   ├── launch_area_selector.bat   ← Jalankan aplikasi
+│   └── cleanup_runtime.bat        ← Bersihkan file runtime
+│
+├── 📂 scripts/                    ← Utility Python
+│   └── cleanup_runtime.py         ← Pembersih file runtime
 │
 ├── 📂 .streamlit/
 │   └── config.toml
 ├── 📂 asset/
-│   └── logo/
-│       └── logo-kemenhut-new.png
+│   ├── logo/
+│   │   └── logo-kemenhut-new.png
+│   └── screenshoot/
+│       └── *.png
 ├── 📂 data/
 │   └── quads.*
 ├── 📂 config/
@@ -175,22 +186,29 @@ nicfi_automation/
 
 ---
 
-## 🚀 Instalasi
+## 🚀 Instalasi & Menjalankan Aplikasi
 
-### Menggunakan File BAT (Disarankan)
+### Pertama Kali — Setup Environment
+
+<table>
+<tr>
+<td width="50%">
+
+**Opsi A: File BAT (Disarankan)**
 
 ```
 1. Ekstrak project ke folder pilihan
 2. Buka folder nicfi_automation
-3. Jalankan  →  setup_area_selector.bat
+3. Jalankan  →  bat\setup_area_selector.bat
 4. Tunggu dependency selesai dipasang
 5. Isi PL_API_KEY pada .env
 6. Letakkan shapefile quads.* pada folder data/
-7. Jalankan  →  launch_area_selector.bat
-8. Buka http://localhost:8501 jika browser tidak terbuka otomatis
 ```
 
-### Instalasi Manual (PowerShell)
+</td>
+<td width="50%">
+
+**Opsi B: Manual (PowerShell)**
 
 ```powershell
 py -m venv .venv
@@ -198,10 +216,47 @@ py -m venv .venv
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 python -m pip check
+```
+
+Lalu isi `PL_API_KEY` pada `.env` dan letakkan shapefile pada `data/`.
+
+</td>
+</tr>
+</table>
+
+---
+
+### Menjalankan Aplikasi (Sehari-hari)
+
+<table>
+<tr>
+<td width="50%">
+
+**Opsi A: File BAT**
+
+```
+Klik dua kali  →  bat\launch_area_selector.bat
+```
+
+Browser otomatis terbuka ke `http://localhost:8501`.
+
+</td>
+<td width="50%">
+
+**Opsi B: Manual (PowerShell)**
+
+```powershell
+.\.venv\Scripts\Activate.ps1
 python -m streamlit run area_selector_app.py
 ```
 
-> Hentikan aplikasi dengan `Ctrl + C`
+Buka `http://localhost:8501` jika browser tidak terbuka otomatis.
+
+</td>
+</tr>
+</table>
+
+> Hentikan aplikasi dengan `Ctrl + C` di terminal
 
 ---
 

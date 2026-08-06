@@ -1,8 +1,8 @@
 @echo off
 setlocal
-cd /d "%~dp0"
+cd /d "%~dp0.."
 if not exist .venv\Scripts\python.exe (
-    echo Virtual environment belum tersedia. Jalankan setup_area_selector.bat.
+    echo Virtual environment belum tersedia. Jalankan bat\setup_area_selector.bat.
     pause
     exit /b 1
 )
