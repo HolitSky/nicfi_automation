@@ -44,17 +44,17 @@
       </td>
       <td width="50%" align="center">
         <img src="asset/screenshoot/mini-hero4.png" alt="Output Workbook Excel" width="100%" style="border-radius:8px;"/>
-        <br/><sub><b>📊 Output Workbook Excel</b></sub>
+        <br/><sub><b>👁️ Log proses download</b></sub>
       </td>
     </tr>
     <tr>
       <td width="50%" align="center">
         <img src="asset/screenshoot/mini-hero5.png" alt="Pause dan Resume Download" width="100%" style="border-radius:8px;"/>
-        <br/><sub><b>⏸️ Pause &amp; Resume Sesi</b></sub>
+        <br/><sub><b>🖼️ Data Hasil Unduhan</b></sub>
       </td>
       <td width="50%" align="center">
         <img src="asset/screenshoot/mini-hero6.png" alt="Retry Quad Gagal" width="100%" style="border-radius:8px;"/>
-        <br/><sub><b>🔁 Retry Quad Gagal</b></sub>
+        <br/><sub><b>📊 Output Workbook Excel</b></sub>
       </td>
     </tr>
   </table>
