@@ -15,7 +15,7 @@
     <img src="https://img.shields.io/badge/Planet%20API-NICFI-4CAF50?style=for-the-badge"/>
   </p>
 
-  <p><i>Aplikasi lokal berbasis Python untuk memilih area pada peta, mencari Quad Planet Global Quarterly yang beririsan, mengunduh TIFF, serta membuat workbook Excel berisi peta posisi dan rekap status.</i></p>
+  <p><i>Data NICFI Automation merupakan aplikasi lokal berbasis Python yang dirancang untuk mempermudah proses pengunduhan data citra Planet Global Quarterly. Pengguna dapat menentukan area secara langsung pada peta atau memilih seluruh Indonesia. Aplikasi menjalankan proses pengunduhan secara otomatis, dan menyusun workbook Excel berisi peta posisi Quad serta laporan rekapitulasi hasil proses unduh.</i></p>
 
   <!-- ═══════════════════════════════════ MAIN HERO ═══════════════════════════════════ -->
   <img
