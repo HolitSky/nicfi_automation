@@ -16,6 +16,49 @@
   </p>
 
   <p><i>Aplikasi lokal berbasis Python untuk memilih area pada peta, mencari Quad Planet Global Quarterly yang beririsan, mengunduh TIFF, serta membuat workbook Excel berisi peta posisi dan rekap status.</i></p>
+
+  <!-- ═══════════════════════════════════ MAIN HERO ═══════════════════════════════════ -->
+  <img
+    src="asset/screenshoot/main-hero.png"
+    alt="Planet Global Quarterly — Tampilan Utama Aplikasi"
+    width="100%"
+    style="border-radius:12px; margin-top:16px; margin-bottom:8px;"
+  />
+
+  <!-- ═══════════════════════════════ MINI HERO GRID 2×3 ══════════════════════════════ -->
+  <table width="100%" cellspacing="8" cellpadding="0" border="0" style="margin-top:8px;">
+    <tr>
+      <td width="50%" align="center">
+        <img src="asset/screenshoot/mini-hero1.png" alt="Seleksi Area pada Peta" width="100%" style="border-radius:8px;"/>
+        <br/><sub><b>🗺️ Seleksi Area & Rectangle</b></sub>
+      </td>
+      <td width="50%" align="center">
+        <img src="asset/screenshoot/mini-hero2.png" alt="Monitoring Download Real-time" width="100%" style="border-radius:8px;"/>
+        <br/><sub><b>📡 Monitoring Download Real-time</b></sub>
+      </td>
+    </tr>
+    <tr>
+      <td width="50%" align="center">
+        <img src="asset/screenshoot/mini-hero3.png" alt="Sistem Batch Download" width="100%" style="border-radius:8px;"/>
+        <br/><sub><b>📦 Sistem Batch Otomatis</b></sub>
+      </td>
+      <td width="50%" align="center">
+        <img src="asset/screenshoot/mini-hero4.png" alt="Output Workbook Excel" width="100%" style="border-radius:8px;"/>
+        <br/><sub><b>📊 Output Workbook Excel</b></sub>
+      </td>
+    </tr>
+    <tr>
+      <td width="50%" align="center">
+        <img src="asset/screenshoot/mini-hero5.png" alt="Pause dan Resume Download" width="100%" style="border-radius:8px;"/>
+        <br/><sub><b>⏸️ Pause &amp; Resume Sesi</b></sub>
+      </td>
+      <td width="50%" align="center">
+        <img src="asset/screenshoot/mini-hero6.png" alt="Retry Quad Gagal" width="100%" style="border-radius:8px;"/>
+        <br/><sub><b>🔁 Retry Quad Gagal</b></sub>
+      </td>
+    </tr>
+  </table>
+
 </div>
 
 ---

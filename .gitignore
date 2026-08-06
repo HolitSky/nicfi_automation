@@ -72,9 +72,24 @@ run_manifest.json
 selection_snapshot.json
 
 # =============================================================================
-# DATA SHAPEFILE (bawaan pengguna, tidak perlu di-commit)
+# DATA SHAPEFILE (bawaan pengguna, file besar — folder tetap di-track)
 # =============================================================================
-data/
+data/*.shp
+data/*.dbf
+data/*.shx
+data/*.prj
+data/*.cpg
+data/*.qpj
+data/*.sbn
+data/*.sbx
+data/*.fbn
+data/*.fbx
+data/*.ain
+data/*.aih
+data/*.atx
+data/*.ixs
+data/*.mxs
+data/*.ovr
 
 # =============================================================================
 # TEMPORARY & BACKUP FILES
