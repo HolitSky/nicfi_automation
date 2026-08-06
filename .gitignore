@@ -3,7 +3,8 @@
 # =============================================================================
 .env
 .env.*
-!.env.example          # .env.example boleh masuk Git
+!.env.example
+# .env.example (template tanpa API key asli)
 
 # =============================================================================
 # PYTHON
