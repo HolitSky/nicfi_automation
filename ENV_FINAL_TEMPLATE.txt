@@ -1,0 +1,118 @@
+# ============================================================
+# PLANET API
+# ============================================================
+
+# API key Planet. Jangan dibagikan dan jangan dimasukkan ke Git.
+PL_API_KEY=ISI_API_KEY_PLANET
+
+
+# ============================================================
+# MOSAIC PLANET
+# ============================================================
+MOSAIC_NAME=global_quarterly_2026q2_mosaic
+
+
+# ============================================================
+# VIEWPORT DAN TAMPILAN PETA
+# ============================================================
+DEFAULT_VIEW_BBOX=94.48192600,-12.46876000,141.69006400,6.57730300
+SHOW_MASTER_QUADS_DEFAULT=false
+
+
+# ============================================================
+# AREA DOWNLOAD — DIPERBARUI OTOMATIS OLEH UI
+# ============================================================
+AREA_MODE=custom
+BBOX=120.00000000,-1.00000000,123.00000000,2.00000000
+USE_SELECTED_QUADS=true
+SELECTED_QUADS_FILE=config/selected_quads.json
+BACKUP_CONFIG_FILES=false
+
+
+# ============================================================
+# MASTER QUAD INDONESIA
+# ============================================================
+MASTER_QUADS_SOURCE=data/quads.shp
+MASTER_QUAD_ID_FIELD=id
+MASTER_SOURCE_REQUIRED=true
+CREATE_MASTER_MAP=true
+MASTER_MAP_SHEET_NAME=MASTER_MAP_QUADS
+
+
+# ============================================================
+# FOLDER OUTPUT
+# ============================================================
+OUTPUT_DIR=downloads
+EXCEL_OUTPUT_DIR="downloads/Excel Files"
+
+
+# ============================================================
+# PENAMAAN OTOMATIS PER SESI
+# ============================================================
+AUTO_RUN_NAMING=true
+RUN_NAME_FORMAT=%H_%M_%d_%m_%Y
+RUN_NAME_COLLISION_MODE=suffix
+
+
+# ============================================================
+# REUSE TIFF DARI RUN SEBELUMNYA
+# ============================================================
+REUSE_PREVIOUS_TIFF=true
+REUSE_METHOD=hardlink
+
+
+# ============================================================
+# DOWNLOAD PERFORMANCE
+# ============================================================
+MAX_WORKERS=8
+DOWNLOAD_BATCH_SIZE=250
+DOWNLOAD_CHUNK_MB=8
+USE_PERSISTENT_HTTP_SESSIONS=true
+DRY_RUN=false
+
+
+# ============================================================
+# RETRY DAN KONEKSI
+# ============================================================
+DOWNLOAD_MAX_RETRIES=5
+RETRY_BACKOFF_SECONDS=3
+NETWORK_FAILURE_PAUSE_THRESHOLD=10
+RESUME_PARTIAL_DOWNLOADS=true
+
+
+# ============================================================
+# CHECKPOINT, PAUSE, DAN RESUME
+# ============================================================
+ENABLE_DOWNLOAD_RESUME=true
+DOWNLOAD_STATE_FILENAME=download_state.sqlite
+# Hanya menyimpan run yang masih berjalan atau dijeda.
+ACTIVE_RUN_FILE=config/active_run.json
+PAUSE_FLAG_FILE=config/download.pause
+CANCEL_FLAG_FILE=config/download.cancel
+RUN_HEARTBEAT_SECONDS=5
+STALE_RUN_TIMEOUT_SECONDS=30
+
+
+# ============================================================
+# EXCEL
+# ============================================================
+EXPORT_EXCEL=true
+EXCEL_UPDATE_EVERY_BATCH=false
+EXCEL_UPDATE_ON_PAUSE=true
+EXCEL_ATOMIC_SAVE=true
+
+
+# ============================================================
+# PROGRES UI
+# ============================================================
+UI_PROGRESS_REFRESH_SECONDS=1
+UI_LOG_MAX_LINES=100
+
+
+# ============================================================
+# MANIFEST DAN LOG RUN
+# ============================================================
+CREATE_RUN_MANIFEST=true
+SAVE_RUN_LOG=true
+# Menyimpan hasil terminal terakhir; tidak mengunci pilihan area baru.
+LAST_RUN_FILE=config/last_run.json
