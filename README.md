@@ -585,12 +585,6 @@ Hentikan Streamlit, jalankan ulang, lalu tekan `Ctrl + F5` pada browser.
 
 ---
 
-## 💬 Melanjutkan Project di Chat Baru
-
-Gunakan file [`PROMPT_LANJUT_NEW_CHAT.md`](PROMPT_LANJUT_NEW_CHAT.md). Upload ZIP project terbaru ke chat baru, lalu kirim isi prompt tersebut agar pengembangan dilanjutkan dari source terkini dan tidak dibangun ulang dari nol.
-
----
-
 <div align="center">
   <sub>
     Dikembangkan untuk <b>Kementerian Kehutanan — Direktorat Inventarisasi dan Pemantauan Sumber Daya Hutan (IPSDH)</b>
